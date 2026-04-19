@@ -4,6 +4,20 @@
 
 **Link_Shortener** is a premium, powerful, and modern URL shortener built for professionals. Create customized short links, manage advanced routing features, track link view statistics in real-time, and control your brand—all packed in a sleek, stunning UI. Created by **Adnan Ali**.
 
+## 📝 Project Description
+This project was developed as a full-stack, enterprise-grade solution for link management. It addresses the need for a self-hosted, scalable, and beautifully designed alternative to commercial shorteners. By leveraging a serverless architecture, it provides maximum performance with zero maintenance costs. The system features a custom-built dashboard that utilizes HTMX for a single-page application (SPA) experience without the bloat of heavy frontend frameworks.
+
+## 🛠️ Technology Stack
+This application is built using the latest industry-standard technologies to ensure stability, speed, and security:
+
+*   **Backend Architecture**: Node.js with the Express.js framework for robust API handling.
+*   **Database Management**: Multi-database support (PostgreSQL, MySQL, SQLite) using the Knex.js query builder for seamless 100% cloud-native transitions (Neon.tech).
+*   **Frontend Engine**: Handlebars (HBS) for dynamic server-side rendering, combined with Vanilla CSS for a custom-tailored Glassmorphism design.
+*   **Interactivity**: HTMX for high-performance, asynchronous UI updates without full page reloads.
+*   **Security & Auth**: Passport.js integration with JWT (JSON Web Tokens) and bcrypt for enterprise-level user authentication and password hashing.
+*   **Deployment & DevOps**: Optimized for Vercel Serverless Functions and fully containerized using Docker & Docker Compose for rapid scaling.
+
+
 ## 🚀 Production Deployment (Vercel + Neon)
 
 To deploy this project for free without a credit card:
