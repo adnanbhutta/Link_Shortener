@@ -4,6 +4,16 @@
 
 **Link_Shortener** is a premium, powerful, and modern URL shortener built for professionals. Create customized short links, manage advanced routing features, track link view statistics in real-time, and control your brand—all packed in a sleek, stunning UI. Created by **Adnan Ali**.
 
+## 🚀 Production Deployment (Vercel + Neon)
+
+To deploy this project for free without a credit card:
+1. **Database**: Create a free PostgreSQL database at [Neon.tech](https://neon.tech).
+2. **Environment Variables**: In your Vercel project settings, add:
+   - `DATABASE_URL`: Your Neon connection string.
+   - `DB_CLIENT`: `pg`
+   - `JWT_SECRET`: A long random string.
+3. **Deploy**: Push to GitHub and Vercel will handle the rest.
+
 ---
 
 ## 🚀 Key Features
