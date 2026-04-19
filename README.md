@@ -1,6 +1,6 @@
 # Link_Shortener
 
-![Link_Shortener Banner](link_shortener_banner_1776595265786.png)
+![Link_Shortener Banner](banner.png)
 
 **Link_Shortener** is a premium, powerful, and modern URL shortener built for professionals. Create customized short links, manage advanced routing features, track link view statistics in real-time, and control your brand—all packed in a sleek, stunning UI. Created by **Adnan Ali**.
 
