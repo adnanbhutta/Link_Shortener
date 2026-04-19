@@ -54,6 +54,20 @@ header {
   justify-content: space-between !important;
 }
 
+header ul {
+  list-style: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header li {
+  display: flex !important;
+  align-items: center !important;
+}
+
 .logo-wrapper {
   font-size: 1.5rem !important;
   font-weight: 800 !important;
