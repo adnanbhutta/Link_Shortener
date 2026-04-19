@@ -212,3 +212,51 @@ footer p {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-secondary);
 }
+
+/* Admin Setup / Auth Forms */
+#login-signup {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 24px !important;
+  padding: 3rem !important;
+  margin: 10vh auto !important;
+  max-width: 450px !important;
+  box-shadow: var(--shadow-lg) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+.admin-form-title {
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#login-signup label {
+  font-size: 0.875rem !important;
+  color: var(--text-secondary) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 0.5rem !important;
+}
+
+#login-signup input {
+  width: 100% !important;
+  margin-top: 0.25rem !important;
+}
+
+.buttons-wrapper.admin-form {
+  margin-top: 1rem !important;
+}
+
+.buttons-wrapper.admin-form button {
+  width: 100% !important;
+  justify-content: center !important;
+  padding: 1rem !important;
+  height: auto !important;
+}
