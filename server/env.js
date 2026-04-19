@@ -28,6 +28,7 @@ if (process.argv.includes("--production")) {
 
 const spec = {
   PORT: num({ default: 3000 }),
+  DATABASE_URL: str({ default: "" }),
   SITE_NAME: str({ example: "Link_Shortener", default: "Link_Shortener" }),
   DEFAULT_DOMAIN: str({ example: "yourdomain.com", default: "localhost:3000" }),
   LINK_LENGTH: num({ default: 6 }),
@@ -40,7 +41,7 @@ const spec = {
   DB_NAME: str({ default: "link_shortener" }),
   DB_USER: str({ default: "postgres" }),
   DB_PASSWORD: str({ default: "" }),
-  DB_SSL: bool({ default: false }),
+  DB_SSL: bool({ default: process.env.NODE_ENV === "production" }),
   DB_POOL_MIN: num({ default: 0 }),
   DB_POOL_MAX: num({ default: 10 }),
   REDIS_ENABLED: bool({ default: false }),

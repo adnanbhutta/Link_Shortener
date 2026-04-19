@@ -10,14 +10,14 @@ const isSQLite = env.DB_CLIENT === "sqlite3" || env.DB_CLIENT === "better-sqlite
 
 module.exports = {
   client: env.DB_CLIENT,
-  connection: {
+  connection: env.DATABASE_URL || {
     ...(isSQLite && { filename: env.DB_FILENAME }),
     host: env.DB_HOST,
     database: env.DB_NAME,
     user: env.DB_USER,
     port: env.DB_PORT,
     password: env.DB_PASSWORD,
-    ssl: env.DB_SSL,
+    ssl: env.DB_SSL ? { rejectUnauthorized: false } : false,
   },
   useNullAsDefault: true,
   migrations: {

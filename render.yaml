@@ -1,0 +1,28 @@
+databases:
+  - name: link-shortener-db
+    plan: free
+    databaseName: link_shortener
+    user: admin
+
+services:
+  - type: web
+    name: link-shortener-app
+    env: node
+    plan: free
+    buildCommand: npm install && npm run migrate
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: link-shortener-db
+          property: connectionString
+      - key: DB_CLIENT
+        value: pg
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SITE_NAME
+        value: Link_Shortener
+      - key: DEFAULT_DOMAIN
+        sync: false # Should be updated in dashboard to your live URL after deployment
